@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/buffml.iml" filepath="$PROJECT_DIR$/.idea/buffml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ChatBotNLP.iml" filepath="$PROJECT_DIR$/.idea/ChatBotNLP.iml" />
     </modules>
   </component>
 </project>
