@@ -23,6 +23,17 @@
          "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
          "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
          "context": [""]
+        },
+          {"tag": "create_text_message",
+         "patterns": ["Please create a text message?", "Create a note for me?", "I want you a write a message in a file."],
+         "responses": [""],
+         "context": [""]
+        },
+          {"tag": "exit",
+         "patterns": ["Bye", "Stop", "Quit", "Goodbye","shutdown", "Shut up"],
+         "responses": ["Bye, Have a good Day."],
+         "context": [""]
         }
-   ]
+
+]
 }
