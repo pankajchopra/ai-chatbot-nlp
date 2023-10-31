@@ -1,5 +1,5 @@
 import nltk
-nltk.download('punkt')
+# nltk.download('punkt')
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import json
@@ -93,6 +93,6 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 
 #fitting and saving the model 
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
-model.save('model.h5', hist)
+model.save('model.keras', hist)
 
 print("model created")

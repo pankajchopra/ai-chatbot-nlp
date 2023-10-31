@@ -14,6 +14,11 @@
          "responses": ["Happy to help!", "Any time!", "My pleasure"],
          "context": [""]
         },
+        {"tag": "identity",
+        "patterns": ["who are you", "What is your name?", ""],
+        "responses": ["I am virtual assistant chatbot with deep learning!", "Any time!", "My pleasure"],
+        "context": [""]
+       },
         {"tag": "noanswer",
          "patterns": [],
          "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
