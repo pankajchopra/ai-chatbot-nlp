@@ -11,3 +11,26 @@ function checkAndSubstring(text, substring) {
     console.log("Substring not found");
   }
 }
+
+function extractSubstringBetween(text, startSubstring, endSubstring) {
+  const startIndex = text.indexOf(startSubstring);
+  if (startIndex === -1) {
+    return "Start substring not found";
+  }
+
+  const endIndex = text.indexOf(endSubstring, startIndex + startSubstring.length);
+  if (endIndex === -1) {
+    return "End substring not found";
+  }
+
+  const extractedSubstring = text.substring(startIndex + startSubstring.length, endIndex);
+  return extractedSubstring;
+}
+
+// Example usage
+const myString = "This is a string with [the substring] to extract";
+const startSubstring = "[";
+const endSubstring = "]";
+
+const result = extractSubstringBetween(myString, startSubstring, endSubstring);
+console.log("Extracted substring:", result); // Output: "the substring"
