@@ -1,0 +1,13 @@
+function checkAndSubstring(text, substring) {
+  if (text.includes(substring)) {
+    // Get the starting index of the substring
+    const startIndex = text.indexOf(substring);
+
+    // Extract the substring
+    const extractedSubstring = text.substring(startIndex, startIndex + substring.length);
+
+    console.log("Substring found:", extractedSubstring);
+  } else {
+    console.log("Substring not found");
+  }
+}
