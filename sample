@@ -1,3 +1,8 @@
+subscription key: 1f8dc40f-7a8a-4277-934f-9c672cbdd099
+API access Key1 : 537b95184cb34388ab2653018b963363
+https://eastus.api.cognitive.microsoft.com/
+
+
 function checkAndSubstring(text, substring) {
   if (text.includes(substring)) {
     // Get the starting index of the substring
