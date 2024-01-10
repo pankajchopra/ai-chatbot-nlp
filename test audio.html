@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text</title>
+</head>
+<body>
+    <h1>Speech-to-Text</h1>
+    <input type="file" accept="audio/*" capture="microphone" id="audioInput">
+    <button onclick="transcribe()">Transcribe</button>
+
+    <script>
+        function transcribe() {
+            const audioInput = document.getElementById("audioInput");
+            const file = audioInput.files[0];
+            const formData = new FormData();
+            formData.append("audio", file);
+
+            fetch("/transcribe", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(text => {
+                alert("Transcription Result: " + text);
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+</html>
