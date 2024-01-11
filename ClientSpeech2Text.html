@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Speech to Text</title>
+<script>
+var ws = new WebSocket("ws://localhost:8765");
+ws.onmessage = function(event) {
+  document.getElementById("transcription").textContent = event.data;
+};
+</script>
+</head>
+<body>
+<p id="transcription"></p>
+<script>
+navigator.mediaDevices.getUserMedia({ audio: true })
+  .then(stream => ws.send(stream))
+  .catch(error => console.error(error));
+</script>
+</body>
+</html>
