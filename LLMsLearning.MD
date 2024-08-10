@@ -8,11 +8,9 @@
 >The models available through the Gemini API have context windows that are measured in tokens. The context window defines how much input you can provide and how much output the model can generate.
 >In the following example, 
 >you can see that the gemini-1.0-pro-001 model has an input limit of about 30K tokens and an output limit of about 2K tokens, which means a context window of about 32K tokens.
+**gemini 1.5 pro 2MB, >gemini 1.5 pro for high frequency tasks**
 
->gemini 1.5 pro 2MB
->gemini 1.5 pro for high frequency tasks
-
-model_info = genai.get_model("models/gemini-1.0-pro-001")
+>model_info = genai.get_model("models/gemini-1.0-pro-001")
 # Returns the "context window" for the model,
  which is the combined input and output token limits.
 print(f"{model_info.input_token_limit=}")
