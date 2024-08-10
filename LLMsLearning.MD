@@ -1,6 +1,20 @@
-# LLM
 # For Gemini models, a token is equivalent to about 4 characters. 100 tokens is equal to about 60-80 English words.
-#
+# Open AI
+> Here are some helpful rules of thumb for understanding tokens in terms of lengths:
+    1 token ~= 4 chars in English
+    1 token ~= ¾ words
+    100 tokens ~= 75 words
+
+>Or 
+
+    1-2 sentence ~= 30 tokens
+    1 paragraph ~= 100 tokens
+    1,500 words ~= 2048 tokens
+
+>To get additional context on how tokens stack up, consider this:
+    Wayne Gretzky’s quote "You miss 100% of the shots you don't take" contains 11 tokens.
+    OpenAI’s charter contains 476 tokens.
+    The transcript of the US Declaration of Independence contains 1,695 tokens.
 
 
 
