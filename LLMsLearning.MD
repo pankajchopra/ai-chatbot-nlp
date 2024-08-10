@@ -14,10 +14,10 @@
 
 model_info = genai.get_model("models/gemini-1.0-pro-001")
 # Returns the "context window" for the model,
-# which is the combined input and output token limits.
+ which is the combined input and output token limits.
 print(f"{model_info.input_token_limit=}")
 print(f"{model_info.output_token_limit=}")
-# ( input_token_limit=30720, output_token_limit=2048 )
+( input_token_limit=30720, output_token_limit=2048 )
 -------------
 ***Gemma 2*** is higher-performing and more efficient at **inference** than the first generation, with significant safety advancements built in. In fact, at 27B, it offers competitive alternatives to models more than twice its size, delivering the kind of performance that was only possible with proprietary models as recently as December. _And that’s now achievable on a single NVIDIA H100 Tensor Core GPU or TPU host, significantly reducing deployment costs._
 
